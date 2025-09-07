@@ -23,7 +23,8 @@ public class LoginPage {
 	private final By header = By.tagName("h2");
 	private final By registerLink = By.linkText("Register");
 	
-	private final By loginerrorMag = By.cssSelector("div.alert.alert-danger.alert-dismissible");
+	
+	private final By shop = By.cssSelector("shop");
 
 	private static final Logger log = LogManager.getLogger(LoginPage.class);
 
