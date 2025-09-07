@@ -21,10 +21,8 @@ public class LoginPage {
 	private By loginbutton = By.xpath("//input[@class='btn btn-primary']");
 	private final By forgotpwdLink = By.linkText("Forgotten Password");
 	private final By header = By.tagName("h2");
-	private final By registerLink = By.linkText("Register");
-	
-	
-	private final By shop = By.cssSelector("shop");
+	private final By registerLink = By.linkText("Register");	
+	private final By loginerrorMag = By.cssSelector("div.alert.alert-danger.alert-dismissible");
 
 	private static final Logger log = LogManager.getLogger(LoginPage.class);
 
