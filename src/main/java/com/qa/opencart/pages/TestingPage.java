@@ -2,6 +2,6 @@
 	
 	public class Testing {
 	
-		String s = "Testing";
+		String s = "TestingPages";
 		
 	}
