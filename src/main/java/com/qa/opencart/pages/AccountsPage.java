@@ -28,7 +28,7 @@ public class AccountsPage {
 	public List<String> getAccPageheaders() {
 
 		List<WebElement> headerList = eleUtil.WaitForElementsPresence(headers, AppConstants.DEFAULT_SHORT_WAIT);
-		System.out.println("total number of headers are : " + headerList.size());
+		System.out.println("total number of headers are as : " + headerList.size());
 		List<String> headersValList = new ArrayList<String>();
 		for (WebElement e : headerList) {
 			String text = e.getText();
