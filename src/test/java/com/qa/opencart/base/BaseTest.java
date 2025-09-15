@@ -7,6 +7,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import com.aventstack.chaintest.plugins.ChainTestListener;
@@ -20,7 +21,7 @@ import com.qa.opencart.pages.SearchResultPage;
 
 import io.qameta.allure.Description;
 
-//@Listeners(ChainTestListener.class)
+@Listeners(ChainTestListener.class)
 //@Listeners({ChainTestListener.class , TestAllureListeners.class })
 
 public class BaseTest {
