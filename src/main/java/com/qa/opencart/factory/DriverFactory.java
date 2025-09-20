@@ -130,7 +130,7 @@ public class DriverFactory {
 					break;
 
 				default:
-					log.error("Env. value is wrong pls pass the right environment...");
+					log.error("Env. value is wrong pls pass the right environment..");
 					throw new FrameworkException("===INVALID ENV===");
 				}
 			}
