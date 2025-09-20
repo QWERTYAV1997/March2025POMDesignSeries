@@ -80,7 +80,10 @@ public class DriverFactory {
 	 * This is used to get the local copy of the driver .......
 	 * 
 	 */
-
+	//RUN>>IT
+	//mvn clean install -Denv="dev" -Dsurefire.suiteXmlFiles=src/tests/resources/testRunners/testng_sanity.xml
+	//mvn clean install -Denv="dev" -Dsurefire.suiteXmlFiles=src/tests/resources/testRunners/testng_regression.xml
+	
 	public static WebDriver getDriver() {
 		return tlDriver.get();
 	}
@@ -123,7 +126,7 @@ public class DriverFactory {
 					break;
 
 				case "prod":
-					ip = new FileInputStream("./src/tests/resources/config/config.Properties");
+					ip = new FileInputStream("./src/tests/resources/config/config.properties");
 					break;
 
 				default:
